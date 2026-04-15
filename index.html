@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html lang="pl"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SANITEX - Instalacje Sanitarne, CO i Klimatyzacja Kraków</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary": "#000f22",
+                        "on-secondary-container": "#005c70",
+                        "secondary-container": "#50d9fe",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-error": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e2e2e2",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary-container": "#349c6f",
+                        "surface": "#f9f9f9",
+                        "outline-variant": "#c4c6ce",
+                        "primary-fixed": "#d2e4ff",
+                        "surface-tint": "#49607e",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-container-low": "#f3f3f3",
+                        "inverse-primary": "#b0c8eb",
+                        "on-primary-container": "#768dad",
+                        "tertiary-fixed-dim": "#75daa8",
+                        "on-secondary-fixed": "#001f27",
+                        "outline": "#74777e",
+                        "error": "#ba1a1a",
+                        "on-secondary-fixed-variant": "#004e5f",
+                        "surface-dim": "#dadada",
+                        "secondary": "#00677d",
+                        "surface-container-high": "#e8e8e8",
+                        "tertiary": "#001208",
+                        "inverse-surface": "#2f3131",
+                        "primary-fixed-dim": "#b0c8eb",
+                        "on-background": "#1a1c1c",
+                        "surface-bright": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#92f7c3",
+                        "on-primary-fixed-variant": "#314865",
+                        "on-surface-variant": "#43474d",
+                        "secondary-fixed": "#b3ebff",
+                        "on-tertiary-fixed": "#002113",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed": "#001c37",
+                        "on-tertiary-fixed-variant": "#005235",
+                        "primary-container": "#0a2540",
+                        "tertiary-container": "#002a19",
+                        "on-surface": "#1a1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#4cd6fb",
+                        "on-primary": "#ffffff",
+                        "surface-container": "#eeeeee",
+                        "background": "#f9f9f9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-md shadow-sm">
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+<a class="text-2xl font-black text-[#000f22] dark:text-white uppercase tracking-tighter" href="#"><img src="logo.png" alt="SANITEX" class="h-10 w-auto"></a>
+<nav class="hidden md:flex items-center gap-8">
+<a class="font-['Manrope'] font-semibold tracking-tight text-[#00677d] border-b-2 border-[#00677d] pb-1" href="index.html">Strona główna</a>
+<a class="font-['Manrope'] font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#00677d] transition-colors" href="o-firmie.html">O firmie</a>
+<a class="font-['Manrope'] font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#00677d] transition-colors" href="uslugi.html">Usługi</a>
+<a class="font-['Manrope'] font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#00677d] transition-colors" href="realizacje.html">Realizacje</a>
+<a class="font-['Manrope'] font-semibold tracking-tight text-slate-600 dark:text-slate-300 hover:text-[#00677d] transition-colors" href="kontakt.html">Kontakt</a>
+</nav>
+<button class="bg-secondary text-on-secondary px-6 py-2.5 rounded font-semibold scale-95 active:opacity-80 transition-transform flex items-center gap-2">
+<span class="material-symbols-outlined text-sm">call</span>
+                Zadzwoń teraz
+            </button>
+</div>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative min-h-[870px] flex items-center overflow-hidden bg-primary-container">
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-20" data-alt="Technical blueprint background with overlapping pipes and engineering diagrams in deep navy and architectural cyan colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWbFgAy4Awxfr5dp2Elwj5pVf0kBXsoJfKGgBQEwjNl_FkpA_6DahKro29IWwv_uMZE-TQNDopA6CVE3sAUf4KV85gAxTKYKYl29xntv7kBL1faV9lOm2cziqQh2V5QbpsTOF3DGRBMVLWuH025Yk0NktGJi5qSOStJMWYFB0UJCcOqzHW34q4paXNvkrlvPJETo7hZScQWesPYpONPZrtL5ZUg0i1mcXrswvULkPjtxEIc_4Q7ABmq_Curu5eVVq60s_adAswAS8"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/90 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1 bg-secondary/10 text-secondary-fixed rounded-full text-xs font-bold uppercase tracking-widest border border-secondary/20">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed-dim animate-pulse"></span>
+                        Zaufanie od 25 lat
+                    </div>
+<h1 class="text-white text-5xl md:text-6xl font-extrabold leading-[1.1] tracking-tight">
+                        Kompleksowe instalacje sanitarne, CO i klimatyzacja
+                    </h1>
+<p class="text-on-primary-container text-lg md:text-xl max-w-xl leading-relaxed">
+                        Specjalizujemy się w nowoczesnych systemach inżynieryjnych dla budownictwa wielorodzinnego i komercyjnego. Ponad ćwierć wieku doświadczenia potwierdzonego przez największych deweloperów w Krakowie i Małopolsce.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-md font-bold hover:bg-secondary-fixed-dim transition-all flex items-center gap-3">
+                            Zadzwoń teraz
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="bg-white/5 backdrop-blur-md border border-white/10 text-white px-8 py-4 rounded-md font-bold hover:bg-white/10 transition-all">
+                            Bezpłatna wycena
+                        </button>
+</div>
+</div>
+<!-- Trust Bar Cards (Embedded in Hero for Visual Balance) -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-4" data-icon="history">history</span>
+<h3 class="text-white font-bold mb-1">Ponad 25 lat</h3>
+<p class="text-slate-400 text-sm">doświadczenia na rynku</p>
+</div>
+<div class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-4" data-icon="location_on">location_on</span>
+<h3 class="text-white font-bold mb-1">Kraków</h3>
+<p class="text-slate-400 text-sm">i cała Małopolska</p>
+</div>
+<div class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-4" data-icon="engineering">engineering</span>
+<h3 class="text-white font-bold mb-1">Kadra</h3>
+<p class="text-slate-400 text-sm">Inżynierów i specjalistów</p>
+</div>
+<div class="bg-white/5 backdrop-blur-lg border border-white/10 p-6 rounded-xl hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined text-secondary-fixed text-4xl mb-4" data-icon="verified">verified</span>
+<h3 class="text-white font-bold mb-1">Serwis</h3>
+<p class="text-slate-400 text-sm">Gwarancyjny i wsparcie</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section: Bento Grid -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="mb-16 text-left border-l-4 border-secondary pl-6">
+<span class="text-secondary font-bold tracking-widest uppercase text-xs">Nasza Ekspertyza</span>
+<h2 class="text-4xl font-extrabold text-primary mt-2">Zakres świadczonych usług</h2>
+<p class="text-slate-600 mt-4 max-w-2xl">Oferujemy pełne wsparcie techniczne, od koncepcji i kosztorysu, przez montaż, aż po serwis eksploatacyjny.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<!-- Service Cards -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(73,96,126,0.06)] hover:-translate-y-1 transition-transform group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 block group-hover:scale-110 transition-transform" data-icon="water_drop">water_drop</span>
+<h3 class="text-xl font-bold text-primary mb-3">Instalacje wodno-kanalizacyjne</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Kompleksowe systemy doprowadzania wody i odprowadzania ścieków dla budynków mieszkalnych i biurowych.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(73,96,126,0.06)] hover:-translate-y-1 transition-transform group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 block group-hover:scale-110 transition-transform" data-icon="heat_pump">heat_pump</span>
+<h3 class="text-xl font-bold text-primary mb-3">Centralne ogrzewanie</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Systemy ogrzewania podłogowego oraz tradycyjnego, oparte o najnowocześniejsze technologie energooszczędne.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(73,96,126,0.06)] hover:-translate-y-1 transition-transform group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 block group-hover:scale-110 transition-transform" data-icon="gas_meter">gas_meter</span>
+<h3 class="text-xl font-bold text-primary mb-3">Instalacje gazowe</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Projektowanie i wykonawstwo przyłączy oraz wewnętrznych instalacji gazowych z zachowaniem najwyższych norm bezpieczeństwa.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(73,96,126,0.06)] hover:-translate-y-1 transition-transform group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 block group-hover:scale-110 transition-transform" data-icon="ac_unit">ac_unit</span>
+<h3 class="text-xl font-bold text-primary mb-3">Klimatyzacja i Wentylacja</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Systemy HVAC dopasowane do specyfiki obiektu, zapewniające optymalny komfort termiczny i jakość powietrza.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(73,96,126,0.06)] hover:-translate-y-1 transition-transform group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 block group-hover:scale-110 transition-transform" data-icon="architecture">architecture</span>
+<h3 class="text-xl font-bold text-primary mb-3">Doradztwo i Kosztorysy</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Profesjonalne kosztorysy inwestorskie oraz dobór urządzeń optymalizujący koszty eksploatacji.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-[0px_20px_40px_rgba(73,96,126,0.06)] hover:-translate-y-1 transition-transform group">
+<span class="material-symbols-outlined text-secondary text-5xl mb-6 block group-hover:scale-110 transition-transform" data-icon="bathtub">bathtub</span>
+<h3 class="text-xl font-bold text-primary mb-3">Biały montaż</h3>
+<p class="text-slate-600 text-sm leading-relaxed">Precyzyjny montaż urządzeń sanitarnych oraz armatury w standardzie premium dla wymagających realizacji.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us & Client Types: Editorial Layout -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-10 -left-10 w-32 h-32 bg-secondary/10 rounded-full blur-3xl"></div>
+<img class="rounded-2xl shadow-2xl relative z-10 w-full aspect-[4/5] object-cover" data-alt="Technical engineer checking industrial heating pipes in a modern boiler room, sharp focus, professional industrial setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjElY9GP_nqlPrb27Uxmg_sk1wAAAYYdr4fbd7BWD-VUCV_PcgIT6UzMjOtj7ZSbdB-TinTh-Hy4Zu0neK_GVruDLtgdz94_xs9p9vTCQS3-sYUUDgrvSkL3KquwtrDHcscvoirjO3RP6qbCYwfMK2PYM4XX4YIxH5peoabjJDzdQQk30mRATfdmhxkp-LGLTgu_13MMOwtZCtJ9dihbX75I1y63WHftWy19XsoCaToSycAmzwyuQadkNTDcPQ3saileaKYBGyyM8"/>
+<div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-xl shadow-xl z-20 hidden md:block">
+<span class="text-secondary-fixed text-4xl font-black block">100+</span>
+<span class="text-white text-xs uppercase tracking-widest font-bold">Zakończonych projektów rocznie</span>
+</div>
+</div>
+<div class="space-y-12">
+<div>
+<h2 class="text-4xl font-extrabold text-primary mb-8 tracking-tight">Dlaczego SANITEX?</h2>
+<ul class="space-y-5">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container bg-tertiary-container p-1 rounded-full text-lg" data-icon="check" data-weight="fill">check</span>
+<div>
+<h4 class="font-bold text-primary">Ponad 25 lat doświadczenia na rynku</h4>
+<p class="text-slate-500 text-sm">Budujemy zaufanie od lat 90., stale aktualizując naszą wiedzę techniczną.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container bg-tertiary-container p-1 rounded-full text-lg" data-icon="check" data-weight="fill">check</span>
+<div>
+<h4 class="font-bold text-primary">Wykwalifikowana kadra inżynierów i monterów</h4>
+<p class="text-slate-500 text-sm">Nasi specjaliści posiadają wszystkie niezbędne uprawnienia budowlane i branżowe.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container bg-tertiary-container p-1 rounded-full text-lg" data-icon="check" data-weight="fill">check</span>
+<div>
+<h4 class="font-bold text-primary">Kompleksowa obsługa od projektu do serwisu</h4>
+<p class="text-slate-500 text-sm">Nie szukasz podwykonawców – my bierzemy pełną odpowiedzialność za system.</p>
+</div>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined text-on-tertiary-container bg-tertiary-container p-1 rounded-full text-lg" data-icon="check" data-weight="fill">check</span>
+<div>
+<h4 class="font-bold text-primary">Rzetelność potwierdzona przez deweloperów</h4>
+<p class="text-slate-500 text-sm">Działamy terminowo, co jest kluczowe w dużych inwestycjach budowlanych.</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="bg-surface-container-highest p-8 rounded-2xl">
+<h3 class="text-lg font-bold text-primary mb-6 uppercase tracking-wider">Obsługujemy:</h3>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-white p-4 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="apartment">apartment</span>
+<span class="text-sm font-semibold">Deweloperzy</span>
+</div>
+<div class="bg-white p-4 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="domain">domain</span>
+<span class="text-sm font-semibold">Obiekty komercyjne</span>
+</div>
+<div class="bg-white p-4 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="home">home</span>
+<span class="text-sm font-semibold">Domy jednorodzinne</span>
+</div>
+<div class="bg-white p-4 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary" data-icon="groups">groups</span>
+<span class="text-sm font-semibold">Wspólnoty</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Realizacje Preview -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+<div>
+<span class="text-secondary font-bold tracking-widest uppercase text-xs">Nasze Portfolio</span>
+<h2 class="text-4xl font-extrabold text-primary mt-2">Wybrane Realizacje</h2>
+</div>
+<a class="text-secondary font-bold flex items-center gap-2 hover:gap-4 transition-all" href="#">
+                        Zobacz wszystkie projekty
+                        <span class="material-symbols-outlined">east</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern residential building complex in Krakow with sleek glass facades and technical installations integrated into design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB84I4kURxpe6NkFkbwHwcFaxAX1HFXKgD1LtvyL6v5roiaXpksgY6ufcCOKIdkZtqxYT3xcmbx-1P5_BIE-nBhn2faitLF3OeVY-PCvyniIzBaxWc6klxL0BS2IF8AoZQ2ZX4B0hcmbN3EVlMN9lSZIvQ3HN1aeMxivTRfhQyIPTPly981AuQkw50zaNr5B7t7OnumyOXC2cDCsIWlC_R3HKABUgGG6EUCb8popPaVDD4xid4zpsD14cKmelZUIho6Tc7IZ-GiwFo"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-secondary-fixed text-xs font-bold uppercase mb-2">Budownictwo wielorodzinne</span>
+<h4 class="text-white text-xl font-bold">Osiedle Nowoczesne, Kraków</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Industrial construction site with professional grade pipes and ventilation shafts installed by experts" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAdF_XjX4CXY3R8CzFx4edYkRJKTXn3j86uWLfXRyScXEu-JGH2qLLkV5mGUylNQaTJjSBNK8Uu0kbaVYp_j_qPvFCEGHo-xoJ6qot6q5vMBlZO9bsDC__tN0leMGy04IxbDYi4oUUG6y7HVsA7_Ro0wZhkJiq1uweNfjHTNmvUlMm6vdYRdKkFRsO9yCuJc1tTpvbhaGT0v8Coa-g5AEQyiiJUJ_Tvz6kzV0RpJ-7RwyoMZsieTJ3zAa57fH86Hy07dquOHBG0C4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-secondary-fixed text-xs font-bold uppercase mb-2">Obiekt Przemysłowy</span>
+<h4 class="text-white text-xl font-bold">Hala Logistyczna, Niepołomice</h4>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-2xl aspect-square cursor-pointer">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Modern single family home with sophisticated heating and plumbing installations hidden within elegant architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLI8qVREE1VQJSIdK4GjWGXtXqhJ8qLLddYJo6q2WB2NCSf_8rEFwXPscnID8SJqJ8IuGI_G9yqu4KIQ4FK_4bxedR7SINhTa8iqWK8PsXns5al908VjcP-9oRAfsHIqL8IpVYt0UNo-lW6RAV-U2_HQO7kpySlIPILS39WVBmUB-7ktEsn_16o43WmtE_l_uG5EJEZol-0K7B-LWRksdYZlxYQTZPZwLQDDRwHpEijVMOAAWjl8RPvK9wQjISl_8IoPeuyz0OqH0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent flex flex-col justify-end p-8 opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="text-secondary-fixed text-xs font-bold uppercase mb-2">Dom Jednorodzinny</span>
+<h4 class="text-white text-xl font-bold">Willa Premium, Zielonki</h4>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Quote Request & CTA -->
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-6">
+<div class="bg-primary rounded-[2rem] overflow-hidden flex flex-col lg:flex-row shadow-2xl">
+<div class="lg:w-1/2 p-12 lg:p-20 text-white space-y-6">
+<h2 class="text-4xl font-extrabold tracking-tight">Potrzebujesz wyceny instalacji?</h2>
+<p class="text-slate-400 text-lg">Skorzystaj z formularza lub napisz bezpośrednio na adres: <a class="text-secondary-fixed hover:underline" href="mailto:sanitex@onet.eu">sanitex@onet.eu</a>. Nasi inżynierowie przygotują wstępną ofertę w ciągu 48h.</p>
+<div class="pt-8 flex flex-col gap-4">
+<div class="flex items-center gap-4 text-slate-300">
+<span class="material-symbols-outlined text-secondary" data-icon="phone_iphone">phone_iphone</span>
+<span>Infolinia: +48 XXX XXX XXX</span>
+</div>
+<div class="flex items-center gap-4 text-slate-300">
+<span class="material-symbols-outlined text-secondary" data-icon="mail">mail</span>
+<span>E-mail: sanitex@onet.eu</span>
+</div>
+</div>
+</div>
+<div class="lg:w-1/2 bg-surface-container-lowest p-12 lg:p-20">
+<form class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-500">Imię i Nazwisko</label>
+<input class="w-full bg-surface-container-high border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all" placeholder="Jan Kowalski" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-500">Adres Email</label>
+<input class="w-full bg-surface-container-high border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all" placeholder="jan@przyklad.pl" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-slate-500">Rodzaj usługi</label>
+<select class="w-full bg-surface-container-high border-none rounded-sm px-4 py-3 focus:ring-2 focus:ring-secondary focus:border-transparent transition-all">
+<option>Instalacje wod-kan</option>
+<option>Ogrzewanie CO</option>
+<option>Klimatyzacja / Wentylacja</option>
+<option>Kotłownie</option>
+<option>Inne / Doradztwo</option>
+</select>
+</div>
+<button class="w-full bg-secondary text-white py-4 rounded-md font-bold hover:bg-on-secondary-container transition-all" type="submit">
+                                Wyślij zapytanie o wycenę
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#000f22] dark:bg-black w-full pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<span class="text-xl font-bold text-white mb-4 block">SANITEX</span>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-400">
+                    Lider w branży instalacji sanitarnych w regionie Małopolski. Profesjonalizm, rzetelność i inżynierska precyzja od ponad 25 lat.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Szybkie linki</h4>
+<nav class="flex flex-col gap-3">
+<a class="font-['Inter'] text-sm leading-relaxed text-slate-400 hover:text-white transition-colors hover:translate-x-1 transition-transform" href="index.html">Strona główna</a>
+<a class="font-['Inter'] text-sm leading-relaxed text-slate-400 hover:text-white transition-colors hover:translate-x-1 transition-transform" href="o-firmie.html">O firmie</a>
+<a class="font-['Inter'] text-sm leading-relaxed text-slate-400 hover:text-white transition-colors hover:translate-x-1 transition-transform" href="uslugi.html">Usługi</a>
+<a class="font-['Inter'] text-sm leading-relaxed text-slate-400 hover:text-white transition-colors hover:translate-x-1 transition-transform" href="realizacje.html">Realizacje</a>
+<a class="font-['Inter'] text-sm leading-relaxed text-slate-400 hover:text-white transition-colors hover:translate-x-1 transition-transform" href="kontakt.html">Kontakt</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="text-white font-bold text-sm uppercase tracking-widest">Kontakt</h4>
+<div class="space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" data-icon="location_on">location_on</span>
+<span class="font-['Inter'] text-sm leading-relaxed text-slate-400">Oboźna 31, 30-010 Kraków</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" data-icon="mail">mail</span>
+<span class="font-['Inter'] text-sm leading-relaxed text-slate-400">sanitex@onet.eu</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary-fixed text-lg" data-icon="phone">phone</span>
+<span class="font-['Inter'] text-sm leading-relaxed text-slate-400">+48 12 XXX XX XX</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-500">© 2024 SANITEX. Wszelkie prawa zastrzeżone.</p>
+<div class="flex gap-6">
+<a class="text-slate-500 hover:text-white text-xs" href="#">Polityka Prywatności</a>
+<a class="text-slate-500 hover:text-white text-xs" href="#">Cookies</a>
+</div>
+</div>
+</footer>
+</body></html>
